@@ -339,7 +339,7 @@ func (b *Bulk) makeParam(val DataValue, col columnStruct) (res param, err error)
 
 	switch col.ti.TypeId {
 
-	case typeInt1, typeInt2, typeInt4, typeInt8, typeIntN:
+	case typeInt1, typeInt2, typeInt4, typeInt8, typeIntN, typeMoney, typeMoneyN:
 		var intvalue int64
 
 		switch val := val.(type) {
@@ -359,7 +359,9 @@ func (b *Bulk) makeParam(val DataValue, col columnStruct) (res param, err error)
 		}
 
 		res.buffer = make([]byte, res.ti.Size)
-		if col.ti.Size == 1 {
+		if col.ti.TypeId == typeMoney || col.ti.TypeId == typeMoneyN {
+			encodeMoney(res.buffer, intvalue)
+		} else if col.ti.Size == 1 {
 			res.buffer[0] = byte(intvalue)
 		} else if col.ti.Size == 2 {
 			binary.LittleEndian.PutUint16(res.buffer, uint16(intvalue))
@@ -623,6 +625,19 @@ func (b *Bulk) makeParam(val DataValue, col columnStruct) (res param, err error)
 	}
 	return
 
+}
+
+func encodeMoney(out []byte, value int64) {
+	var buf [8]byte
+	binary.LittleEndian.PutUint64(buf[:], uint64(value))
+	out[4] = buf[0]
+	out[5] = buf[1]
+	out[6] = buf[2]
+	out[7] = buf[3]
+	out[0] = buf[4]
+	out[1] = buf[5]
+	out[2] = buf[6]
+	out[3] = buf[7]
 }
 
 func (b *Bulk) dlogf(ctx context.Context, format string, v ...interface{}) {

@@ -17,9 +17,9 @@ import (
 	"unicode"
 
 	"github.com/golang-sql/sqlexp"
-	"github.com/microsoft/go-mssqldb/aecmk"
-	"github.com/microsoft/go-mssqldb/internal/querytext"
-	"github.com/microsoft/go-mssqldb/msdsn"
+	"github.com/stenet/go-mssqldb/aecmk"
+	"github.com/stenet/go-mssqldb/internal/querytext"
+	"github.com/stenet/go-mssqldb/msdsn"
 )
 
 // ReturnStatus may be used to return the return value from a proc.

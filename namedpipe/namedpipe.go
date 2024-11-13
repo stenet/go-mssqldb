@@ -3,7 +3,7 @@ package namedpipe
 import (
 	"runtime"
 
-	"github.com/microsoft/go-mssqldb/msdsn"
+	"github.com/stenet/go-mssqldb/msdsn"
 )
 
 type namedPipeDialer struct{}

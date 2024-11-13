@@ -1,14 +1,15 @@
+//go:build windows
 // +build windows
 
 package mssql
 
 import (
-	"github.com/microsoft/go-mssqldb/integratedauth"
+	"github.com/stenet/go-mssqldb/integratedauth"
 
 	// nolint importing the ntlm package causes it to be registered as an available authentication provider
-	_ "github.com/microsoft/go-mssqldb/integratedauth/ntlm"
+	_ "github.com/stenet/go-mssqldb/integratedauth/ntlm"
 	// nolint importing the winsspi package causes it to be registered as an available authentication provider
-	_ "github.com/microsoft/go-mssqldb/integratedauth/winsspi"
+	_ "github.com/stenet/go-mssqldb/integratedauth/winsspi"
 )
 
 func init() {

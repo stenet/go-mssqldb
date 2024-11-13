@@ -18,8 +18,8 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys"
-	"github.com/microsoft/go-mssqldb/aecmk"
-	ae "github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg"
+	"github.com/stenet/go-mssqldb/aecmk"
+	ae "github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg"
 	"golang.org/x/text/encoding/unicode"
 )
 

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/golang-sql/civil"
-	"github.com/microsoft/go-mssqldb/aecmk"
+	"github.com/stenet/go-mssqldb/aecmk"
 	"github.com/stretchr/testify/assert"
 )
 

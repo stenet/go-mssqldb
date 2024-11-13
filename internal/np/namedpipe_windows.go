@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/microsoft/go-mssqldb/internal/gopkg.in/natefinch/npipe.v2"
+	"github.com/stenet/go-mssqldb/internal/gopkg.in/natefinch/npipe.v2"
 )
 
 func DialConnection(ctx context.Context, pipename string, host string, instanceName string, inputServerSPN string) (conn net.Conn, serverSPN string, err error) {

@@ -99,8 +99,8 @@ package main
 
 import (
     ...
-    _ "github.com/microsoft/go-mssqldb"
-    _ "github.com/microsoft/go-mssqldb/integratedauth/krb5"
+    _ "github.com/stenet/go-mssqldb"
+    _ "github.com/stenet/go-mssqldb/integratedauth/krb5"
 )
 
 func main() {
@@ -241,7 +241,7 @@ import (
   "net/url"
 
   // Import the Azure AD driver module (also imports the regular driver package)
-  "github.com/microsoft/go-mssqldb/azuread"
+  "github.com/stenet/go-mssqldb/azuread"
 )
 
 func ConnectWithMSI() (*sql.DB, error) {
@@ -408,7 +408,7 @@ Include the local certificate providers:
 
 ```go
  import (
-  "github.com/microsoft/go-mssqldb/aecmk/localcert"
+  "github.com/stenet/go-mssqldb/aecmk/localcert"
  )
  ```
 

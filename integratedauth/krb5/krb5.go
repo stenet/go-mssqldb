@@ -16,8 +16,8 @@ import (
 	"github.com/jcmturner/gokrb5/v8/keytab"
 	"github.com/jcmturner/gokrb5/v8/spnego"
 
-	"github.com/microsoft/go-mssqldb/integratedauth"
-	"github.com/microsoft/go-mssqldb/msdsn"
+	"github.com/stenet/go-mssqldb/integratedauth"
+	"github.com/stenet/go-mssqldb/msdsn"
 )
 
 const (

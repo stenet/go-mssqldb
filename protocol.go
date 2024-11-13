@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/microsoft/go-mssqldb/msdsn"
+	"github.com/stenet/go-mssqldb/msdsn"
 )
 
 type MssqlProtocolDialer interface {

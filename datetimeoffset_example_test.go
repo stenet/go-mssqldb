@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/golang-sql/civil"
-	mssql "github.com/microsoft/go-mssqldb"
+	mssql "github.com/stenet/go-mssqldb"
 )
 
 // This example shows how to insert and retrieve date and time types data

@@ -34,8 +34,8 @@ import (
 	"fmt"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/feature/rds/auth"
-	_ "github.com/microsoft/go-mssqldb"
-	mssql "github.com/microsoft/go-mssqldb"
+	_ "github.com/stenet/go-mssqldb"
+	mssql "github.com/stenet/go-mssqldb"
 	"log"
 	"strconv"
 )

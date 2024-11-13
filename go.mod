@@ -1,4 +1,4 @@
-module github.com/microsoft/go-mssqldb
+module github.com/stenet/go-mssqldb
 
 go 1.17
 
@@ -16,7 +16,7 @@ require (
 )
 
 require (
-	github.com/Azure/azure-sdk-for-go/sdk/internal v1.5.1 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/internal v1.5.1 // indirect; indirecgithub.com/microsoft/go-mssqldbt
 	github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/internal v1.0.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.2.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect

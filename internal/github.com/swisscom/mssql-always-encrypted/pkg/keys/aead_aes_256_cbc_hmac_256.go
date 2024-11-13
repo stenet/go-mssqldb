@@ -3,8 +3,8 @@ package keys
 import (
 	"fmt"
 
-	"github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/crypto"
-	"github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/utils"
+	"github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/crypto"
+	"github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/utils"
 )
 
 var _ Key = &AeadAes256CbcHmac256{}

@@ -15,9 +15,9 @@ import (
 	"unicode/utf16"
 	"unicode/utf8"
 
-	"github.com/microsoft/go-mssqldb/aecmk"
-	"github.com/microsoft/go-mssqldb/integratedauth"
-	"github.com/microsoft/go-mssqldb/msdsn"
+	"github.com/stenet/go-mssqldb/aecmk"
+	"github.com/stenet/go-mssqldb/integratedauth"
+	"github.com/stenet/go-mssqldb/msdsn"
 )
 
 func parseDAC(msg []byte, instance string) msdsn.BrowserData {

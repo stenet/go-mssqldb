@@ -5,9 +5,9 @@ import (
 	"crypto/subtle"
 	"fmt"
 
-	"github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/crypto"
-	"github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/encryption"
-	"github.com/microsoft/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/keys"
+	"github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/crypto"
+	"github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/encryption"
+	"github.com/stenet/go-mssqldb/internal/github.com/swisscom/mssql-always-encrypted/pkg/keys"
 )
 
 // https://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05
